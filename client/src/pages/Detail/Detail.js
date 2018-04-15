@@ -33,8 +33,11 @@ class Detail extends Component {
             <article>
               <h1>Synopsis</h1>
               <p>
-                {this.state.book.synopsis}
-              </p>
+                {this.state.book.synopsis}</p>
+                <p>
+                Share this link with your party: <Link to={"/books/" + this.state.book._id} target="_blank">
+                  http://localhost:3000{"/books/" + this.state.book._id}</Link>
+                </p>
             </article>
           </Col>
         </Row>

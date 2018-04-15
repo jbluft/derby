@@ -25,6 +25,7 @@ class Books extends Component {
         this.setState({ books: res.data, title: "", author: "", synopsis: "" })
       )
       .catch(err => console.log(err));
+      console.log(this.state.books);
   };
 
   deleteBook = id => {
@@ -59,7 +60,7 @@ class Books extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h1>Create A Derby Party</h1>
             </Jumbotron>
             <form>
               <Input
@@ -90,7 +91,7 @@ class Books extends Component {
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>Books On My List</h1>
+              <h1>Derby Parties List</h1>
             </Jumbotron>
             {this.state.books.length ? (
               <List>
